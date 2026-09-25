@@ -1,0 +1,14 @@
+name: web-antigravity
+version: 0.1.0
+description: "Search-only Hermes backend using Google Search grounding through an Anthropic Messages gateway."
+author: Duu
+kind: backend
+provides_web_providers:
+  - antigravity
+requires_env:
+  - name: ANTIGRAVITY_SEARCH_BASE_URL
+    description: "HTTPS base URL for the Anthropic Messages gateway"
+    secret: false
+  - name: ANTIGRAVITY_SEARCH_API_KEY
+    description: "API key for the Anthropic Messages gateway"
+    secret: true
